@@ -1,0 +1,12 @@
+---
+# Installing Packages with one Task ( Faster Process )
+- hosts: all
+  become: yes
+  become_method: sudo	
+  tasks:
+
+  - name: Installing Packages
+    apt:
+      name: "{{ item }}"
+    with_items:
+      - git
