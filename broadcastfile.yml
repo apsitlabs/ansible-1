@@ -1,0 +1,8 @@
+- hosts: all
+  become: yes
+  become_method: sudo
+  tasks:
+    - copy:
+        src: /home/apsit/Videos/demo1.txt
+        dest: /home/apsit/Videos/
+        mode: '1777'

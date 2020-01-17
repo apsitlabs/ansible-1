@@ -1,0 +1,9 @@
+---
+- hosts: all
+  user: ansadm
+  become: yes
+  become_method: sudo
+  tasks:
+  
+  - name: 1. remote reboot
+    reboot:
