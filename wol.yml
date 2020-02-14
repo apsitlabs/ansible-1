@@ -3,7 +3,7 @@
   hosts: 127.0.0.1
   become: yes
   become_method: sudo
-  ansible_sudo_pass: "123456"
+ 
   tasks:
      - name: Wake On LAN
        local_action: command sudo sh /etc/ansible/wol.sh
