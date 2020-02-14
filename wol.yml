@@ -1,13 +1,6 @@
----
-- hosts: all
-  become: yes
-  become_method: sudo	
-  tasks:
-
-  - name: Wake on LAN
-    wakeonlan: 
-      mac: C8:D9:D2:29:6F:28 
-      port: 9
+wakeonlan C8:D9:D2:29:6F:28 
+wakeonlan C8:D9:D2:29:6E:7F
+      
 
 
 
