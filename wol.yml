@@ -1,6 +1,13 @@
-wakeonlan C8:D9:D2:29:6F:28 
-wakeonlan C8:D9:D2:29:6E:7F
+---
+- name: Wake On LAN
+  hosts: 127.0.0.1
+  become: yes
+  become_user: ansadm
+  tasks:
+     - name: Wake On LAN
+       local_action: command sudo sh /etc/ansible/wol.sh
       
+    
 
 
 
