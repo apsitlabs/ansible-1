@@ -1,6 +1,8 @@
 ---
 - name: Wake On LAN
   hosts: 127.0.0.1
+  become: true
+  become_user: ansadm
   
 
  
